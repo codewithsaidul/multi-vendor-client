@@ -7,6 +7,10 @@ export const getSidebarItems = (userRole: TRole) => {
   switch (userRole) {
     case role.admin:
       return [...adminSidebarItems];
+    case role.manager:
+      return [];
+    case role.user:
+      return [];
     default:
       return [];
   }

@@ -21,14 +21,14 @@ export default function DashboardLayout({
 ) {
 
   const router = useRouter()
-  const { data: userProfile, isLoading } = useGetProfileQuery(undefined);
+  const { data: userProfile, isLoading, isError } = useGetProfileQuery(undefined);
 
 
   useEffect(() => {
-    if (!isLoading && !userProfile) {
+    if (!isLoading && (isError || !userProfile)) {
       router.push("/");
     }
-  }, [isLoading, userProfile, router]);
+  }, [isLoading, userProfile, router, isError]);
 
   return (
     <ReduxProvider>

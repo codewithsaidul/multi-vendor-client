@@ -35,10 +35,6 @@ export default function AllVendors() {
   const pagination = data?.meta;
 
 
-  const handleStatus = (id: string ) => {
-    console.log(id)
-  }
-
   return (
     <div>
       <TableData<TVendor>
@@ -59,7 +55,7 @@ export default function AllVendors() {
         search={search}
         onSearch={setSearch}
         actions={(vendor) => (
-          <Button onClick={() => handleStatus(vendor._id as string)} className={`${vendor.status !== "rejected" ? "bg-red-500 hover:bg-red-600 text-white" : "bg-green-500 hover:bg-green-600 text-white"}`}>
+          <Button className={`${vendor.status !== "rejected" ? "bg-red-500 hover:bg-red-600 text-white" : "bg-green-500 hover:bg-green-600 text-white"}`}>
             {
               vendor.status === "rejected" ? "Approve" : "Rejected"
             }

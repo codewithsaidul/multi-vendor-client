@@ -1,10 +1,6 @@
 import { ISidebarItem } from "@/types";
 
 
-
-
-
-
 export const adminSidebarItems: ISidebarItem[] = [
   {
     title: "Dashboard",

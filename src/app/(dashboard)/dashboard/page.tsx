@@ -1,10 +1,10 @@
-import AllVendors from "@/components/modules/vendor/AllVendors"
+
 
 
 const page = () => {
   return (
     <div className="lg:px-4">
-      <AllVendors />
+      <h1>Dashboard</h1>
     </div>
   )
 }
