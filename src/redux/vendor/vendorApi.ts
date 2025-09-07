@@ -19,7 +19,7 @@ export const vendorApi = baseApi.injectEndpoints({
     }),
     updateVendorStatus: builder.mutation({
       query: ({ id, ...vendor }) => ({
-        url: `/vendors/${id}`,
+        url: `/vendors/${id}/statusUpdate`,
         method: "PUT",
         body: vendor,
       }),

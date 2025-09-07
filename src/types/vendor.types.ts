@@ -8,3 +8,9 @@ export interface IVendor {
     createdAt: string;
     updatedAt: string;
 }
+
+
+
+export interface IVendorStatusUpdate {
+    status: string;
+}
