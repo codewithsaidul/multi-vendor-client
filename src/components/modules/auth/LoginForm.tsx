@@ -57,7 +57,6 @@ export default function LoginForm({
 
       if (res.success && res.statusCode === 200) {
         toast.success(res.message, { id: toastId });
-        console.log(res);
         router.push("/dashboard");
       }
     } catch (error: unknown) {

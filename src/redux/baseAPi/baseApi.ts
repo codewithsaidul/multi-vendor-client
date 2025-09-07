@@ -6,5 +6,6 @@ export const baseApi = createApi({
     baseUrl: `${process.env.NEXT_PUBLIC_URL}/api/v1`,
     credentials: "include",
   }),
+  tagTypes: ["User Profile", "Vendors"],
   endpoints: () => ({}),
 });
